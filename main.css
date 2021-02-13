@@ -91,7 +91,81 @@ section.section-two .construction {
     flex-direction: column;
     align-items: center;
 }
-section.section-two .construction img {
+section.section-two .construction svg {
+    width: 210px;
+    height: 140px;
+}
+
+section.section-two .construction svg .cloud {
+    animation-name: softBounceCloud;
+    animation-duration: 10000ms;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 210px;
+    height: 140px;
+}
+@keyframes softBounceCloud {
+    0% {
+        transform:scale(.5) translateY(-100px) translateX(1000px)
+    }
+    100% {
+        transform:scale(.5) translateY(-100px) translateX(0px)
+    }
+}
+section.section-two .construction svg .tree1 {
+    animation-name: softBounceTree1;
+    animation-duration: 2000ms;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 210px;
+    height: 140px;
+    transform-origin: bottom center;
+}
+@keyframes softBounceTree1 {
+    0% {
+        transform:rotate(-9deg)
+    }
+    100% {
+        transform:rotate(-15deg)
+    }
+}
+section.section-two .construction svg .tree2 {
+    animation-name: softBounceTree2;
+    animation-duration: 7000ms;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 210px;
+    height: 140px;
+    transform-origin: bottom center;
+}
+@keyframes softBounceTree2 {
+    0% {
+        transform: translateY(-100px) rotate(0deg)
+    }
+    100% {
+        transform:translateY(-100px) rotate(-15deg)
+    }
+}
+section.section-two .construction svg .tree3 {
+    animation-name: softBounceTree3;
+    animation-duration: 5000ms;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 210px;
+    height: 140px;
+    transform-origin: bottom center;
+}
+@keyframes softBounceTree3 {
+    0% {
+        transform: translateY(-100px) rotate(0deg)
+    }
+    100% {
+        transform:translateY(-100px) rotate(-30deg)
+    }
 }
 section.section-two .construction h3 {
     font-size: 23px;
