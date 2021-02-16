@@ -5,6 +5,27 @@ body {
 * {
     font-family: "Gothic A1";
 }
+/* General */
+.button-container {
+    display: flex;
+
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.button-container [class^="btn"]:first-child {
+    margin-right: 40px;
+}
+
+.btn-secondary {
+    background: #C42F80;
+    color: white;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 6px;
+}
 
 /* Header and nav */
 header {
@@ -17,12 +38,12 @@ header {
     top: 0;
 }
 .header-container {
-    max-width: 1024px;
+    max-width: 808px;
     display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .logo {
 }
@@ -59,17 +80,8 @@ section.section-one p {
     margin: 0 0 11px;
 }
 section.section-one h1 {
-    color: #2d93ce;
-    font-size: 18px;
-}
-section.section-one p {
-    color: #424242;
-}
-section.section-one .p1 {
-    font-size: 16px;
-}
-section.section-one .p2 {
-    font-size: 13px;
+    color: #BAD9EB;
+    font-size: 47px;
 }
 /* Content */
 /* Section 2 */
@@ -175,17 +187,6 @@ section.section-two .description {
 }
 section.section-two .description p {
 }
-section.section-two .contact {
-    font-size: 13px;
-}
-section.section-two .contact p {
-    font-weight: 600;
-    margin: 0 0 5px;
-}
-section.section-two .contact p.email {
-    font-weight: bold;
-    text-decoration: underline;
-}
 
 /* Content */
 /* Section 3 */
@@ -231,4 +232,19 @@ section.section-two .contact p.email {
 .section-three .owl-carousel img {
     height: 270px;
     width: 209px;
+}
+
+/* Content */
+/* Section 4 */
+
+.section-four {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-four .contact{
+}
+.section-four .contact p{
+    font-size: 13px;
+    color: #717171;
+    margin: 0 0 10px;
 }
