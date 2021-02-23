@@ -8,7 +8,6 @@ body {
 /* General */
 .button-container {
     display: flex;
-
 }
 .button-container {
     display: flex;
@@ -20,11 +19,12 @@ body {
 }
 
 .btn-secondary {
-    background: #C42F80;
+    background: #c42f80;
     color: white;
     font-size: 16px;
     padding: 14px 20px;
     border-radius: 6px;
+    text-decoration: none;
 }
 
 /* Header and nav */
@@ -80,7 +80,7 @@ section.section-one p {
     margin: 0 0 11px;
 }
 section.section-one h1 {
-    color: #BAD9EB;
+    color: #bad9eb;
     font-size: 47px;
 }
 /* Content */
@@ -111,7 +111,7 @@ section.section-two .construction svg {
 section.section-two .construction svg .cloud {
     animation-name: softBounceCloud;
     animation-duration: 10000ms;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     width: 210px;
@@ -119,16 +119,16 @@ section.section-two .construction svg .cloud {
 }
 @keyframes softBounceCloud {
     0% {
-        transform:scale(.5) translateY(-100px) translateX(1000px)
+        transform: scale(0.5) translateY(-100px) translateX(1000px);
     }
     100% {
-        transform:scale(.5) translateY(-100px) translateX(0px)
+        transform: scale(0.5) translateY(-100px) translateX(0px);
     }
 }
 section.section-two .construction svg .tree1 {
     animation-name: softBounceTree1;
     animation-duration: 2000ms;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     width: 210px;
@@ -137,16 +137,16 @@ section.section-two .construction svg .tree1 {
 }
 @keyframes softBounceTree1 {
     0% {
-        transform:rotate(-9deg)
+        transform: rotate(-9deg);
     }
     100% {
-        transform:rotate(-15deg)
+        transform: rotate(-15deg);
     }
 }
 section.section-two .construction svg .tree2 {
     animation-name: softBounceTree2;
     animation-duration: 7000ms;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     width: 210px;
@@ -155,16 +155,16 @@ section.section-two .construction svg .tree2 {
 }
 @keyframes softBounceTree2 {
     0% {
-        transform: translateY(-100px) rotate(0deg)
+        transform: translateY(-100px) rotate(0deg);
     }
     100% {
-        transform:translateY(-100px) rotate(-15deg)
+        transform: translateY(-100px) rotate(-15deg);
     }
 }
 section.section-two .construction svg .tree3 {
     animation-name: softBounceTree3;
     animation-duration: 5000ms;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     width: 210px;
@@ -173,10 +173,10 @@ section.section-two .construction svg .tree3 {
 }
 @keyframes softBounceTree3 {
     0% {
-        transform: translateY(-100px) rotate(0deg)
+        transform: translateY(-100px) rotate(0deg);
     }
     100% {
-        transform:translateY(-100px) rotate(-30deg)
+        transform: translateY(-100px) rotate(-30deg);
     }
 }
 section.section-two .construction h3 {
@@ -241,10 +241,57 @@ section.section-two .description p {
     text-align: center;
     margin-bottom: 50px;
 }
-.section-four .contact{
+.section-four .contact {
 }
-.section-four .contact p{
+.section-four .contact p {
     font-size: 13px;
     color: #717171;
     margin: 0 0 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    section .section-two-container {
+        margin: 0 4%;
+    }
+    .main-nav ul li.nav-link:first-child {
+        width: 100px;
+        text-align: center;
+    }
+    .main-nav ul li.nav-link a {
+        font-size: 13px;
+    }
+    .header-container {
+        padding: 0 2%;
+    }
+    .main-nav ul {
+        display: flex;
+        align-items: center;
+        padding-left: 11px;
+    }
+    .main-nav ul li.nav-link {
+        display: inline-block;
+        margin-left: 17px;
+    }
+    section.section-one h1 {
+        color: #bad9eb;
+        font-size: 27px;
+    }
+    section.section-two .construction h3 {
+        font-size: 20px;
+    }
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-container [class^="btn"]:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .btn-secondary {
+        font-size: 14px;
+        padding: 11px 18px;
+        width: 150px;
+        text-align: center;
+    }
 }
