@@ -46,6 +46,11 @@ header {
     justify-content: space-between;
 }
 .logo {
+    position: relative;
+    top: 42px;
+}
+.logo .logo-mobile{
+    display: none;
 }
 .main-nav {
 }
@@ -264,6 +269,14 @@ section.section-two .description p {
     .header-container {
         padding: 0 2%;
     }
+    .logo .logo-desktop{
+        display: none;
+    }
+    .logo .logo-mobile{
+        display: block;
+        width: auto;
+
+    }
     .main-nav ul {
         display: flex;
         align-items: center;
@@ -293,5 +306,8 @@ section.section-two .description p {
         padding: 11px 18px;
         width: 150px;
         text-align: center;
+    }
+    .logo {
+        top: 0;
     }
 }
