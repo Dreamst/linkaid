@@ -52,6 +52,9 @@ header {
 .logo .logo-mobile{
     display: none;
 }
+.logo .logo-desktop{
+    width: 142px;
+}
 .main-nav {
 }
 .main-nav ul {
