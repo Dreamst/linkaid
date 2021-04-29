@@ -135,7 +135,13 @@ body#linkaid {
     padding: 0 30px;
     width: auto;
   }
+  .logo-concert img {
+    width: 320px;
+  }
   .tick-group {
     margin-right: 3%;   
+}
+.tick-group:last-of-type {
+    margin-right: 0;
 }
 }
