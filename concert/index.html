@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../concert.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../flip/flip.min.css" />
+    <script src="./../flip/flip.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body id="linkaid">
+    <a href="#">
+      <img class="main-logo" src="./../concert-assets/logo.png" alt="logo" />
+    </a>
+    <div class="background-container">
+      <div class="background-isolator">
+        <img class="haut3" src="./../background-assets/haut.png" alt="" />
+        <img class="gauche" src="./../background-assets/gauche.png" alt="" />
+        <img class="droit" src="./../background-assets/droite.png" alt="" />
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="logo-concert">
+        <img src="./../concert-assets/logo_concert.png" alt="" />
+      </div>
+      <div class="titre-site">
+        <h1>Semaine d’amérique latine et des caraïbes</h1>
+      </div>
+      <div class="tick" data-did-init="handleTickInit">
+        <div
+          data-repeat="true"
+          data-layout="horizontal fit"
+          data-transform="preset(d, h, m, s) -> delay"
+        >
+          <div class="tick-group">
+            <div
+              data-key="value"
+              data-repeat="true"
+              data-transform="pad(00) -> split -> delay"
+            >
+              <span data-view="flip"></span>
+            </div>
+
+            <span data-key="label" data-view="text" class="tick-label"></span>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <p>Linkaid</p>
+        <p>
+          est une Association de Solidarité lancée en avril 2020 pour répondre à
+          l’urgence alimentaire en France lors de la situation sanitaire et
+          sociale dégradée par la pandémie de Covid-19 et la précarisation liée
+          au confinement. C’est en allant quotidiennement à la rencontre de nos
+          bénéficiaires lors des distributions que nous avons très rapidement vu
+          la nécessité d’étendre notre action et ouvert 3 nouveaux programmes
+          d’Actions Solidaire. Aujourd’hui, Linkaid rassemble environ 250
+          volontaires à travers l’ïle-de-France et participe activement à
+          l’accompagnement de foyers précaires dans leur combat pour la dignité
+          et l’indépendance.
+        </p>
+      </div>
+    </div>
+    <script src="./../concert.js"></script>
+  </body>
+</html>
