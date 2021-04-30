@@ -1,8 +1,9 @@
 body#linkaid {
-  background: #ece6f1;
+  /* background: #ece6f1; */
+  background: #f7f7f7;
   margin: 0;
   padding: 0;
-  font-family: "Hind";
+  font-family: "Quicksand";
   position: relative;
 }
 /* Raleway */
@@ -31,21 +32,21 @@ body#linkaid {
 .haut3 {
   position: absolute;
   width: 70%;
-  max-width: 850px;
+  max-width: 640px;
   top: -30px;
   left: -10px;
 }
 .gauche {
   position: absolute;
   width: 21%;
-  max-width: 300px;
+  max-width: 170px;
   top: 300px;
   left: -10px;
 }
 .droit {
   position: absolute;
   width: 20%;
-  max-width: 300px;
+  max-width: 180px;
   top: 140px;
   right: 0px;
 }
@@ -75,10 +76,10 @@ body#linkaid {
 .titre-site h1 {
   text-transform: uppercase;
   color: #8964aa;
-
+  font-family: "Quicksand";
   font-size: 36px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   max-width: 610px;
   margin: auto;
 }
@@ -87,17 +88,20 @@ body#linkaid {
 
 .tick {
   width: 50%;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 #linkaid .tick span[data-key="label"] {
-  font-size: 20px;
-  font-family: "Hind";
+  font-size: 19px;
   width: 100%;
   text-align: center;
-  color: #81718e;
+  color: #583d6d;
+  font-weight: 600;
 }
 .tick-group {
   margin-right: 30px;
+}
+.tick-group:nth-child(4) {
+  margin-right: 0px;
 }
 
 #linkaid .tick-credits {
@@ -112,36 +116,110 @@ body#linkaid {
   margin: auto;
   color: #3a3340;
   letter-spacing: 1px;
+  margin-bottom: 50px;
 }
 .description p:first-child {
-  font-size: 28px;
+  font-size: 42px;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
 }
-.description p:first-child {
-  margin-top: 0;
+.description p:nth-child(2) {
+  margin-top: 13px;
 }
 
-@media screen and (max-width: 680px) {
+/* Actions */
+
+.actions {
+  max-width: 600px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.actions-icon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actions-icon img {
+  width: 100%;
+}
+.actions-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.actions-text h2 {
+  margin: 0 0 15px;
+  padding-left: 50px;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.actions-text h2:nth-child(1) {
+  color: #d24e9b;
+}
+.actions-text h2:nth-child(2) {
+  color: #2c90cb;
+}
+.actions-text h2:nth-child(3) {
+  color: #8964aa;
+}
+.actions-text h2:nth-child(4) {
+  color: #7b746e;
+}
+
+@media screen and (max-width: 750px) {
   .titre-site h1 {
     font-size: 27px;
     width: 250px;
   }
   .tick {
     width: 85%;
-      
   }
   .description {
     padding: 0 30px;
     width: auto;
   }
+  .logo-concert {
+    padding-top: 120px;
+  }
   .logo-concert img {
-    width: 200px;
+    width: 300px;
+    z-index: -2;
   }
   .tick-group {
-    margin-right: 3%;   
-}
-.tick-group:last-of-type {
+    margin-right: 3%;
+  }
+  .tick-group:last-of-type {
     margin-right: 0;
-}
+  }
+  .actions {
+    flex-direction: column;
+  }
+  .actions-icon {
+    width: auto;
+  }
+  .actions-icon img {
+    width: 80%;
+  }
+  .actions-text {
+    margin-top: 40px;
+    width: auto;
+    align-items: center;
+  }
+  .actions-text h2 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .description p:nth-child(2) {
+    margin-bottom: -40px;
+  }
+  .actions-icon img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
