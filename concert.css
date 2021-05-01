@@ -65,10 +65,12 @@ body#linkaid {
   justify-content: center;
   padding-top: 200px;
   margin: 0 auto;
+  align-items: center;
 }
 .logo-concert img {
   width: 100%;
   height: auto;
+  z-index: -2;
 }
 
 /* #Main > titre  */
