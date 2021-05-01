@@ -39,7 +39,7 @@ body#linkaid {
 .gauche {
   position: absolute;
   width: 21%;
-  max-width: 170px;
+  max-width: 140px;
   top: 300px;
   left: -10px;
 }
