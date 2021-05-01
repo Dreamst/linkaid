@@ -39,8 +39,8 @@ body#linkaid {
 .gauche {
   position: absolute;
   width: 21%;
-  max-width: 140px;
-  top: 300px;
+  max-width: 170px;
+  top: 140px;
   left: -10px;
 }
 .droit {
