@@ -141,7 +141,7 @@ body#linkaid {
   box-sizing: border-box;
 }
 .actions-icon {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,9 +150,10 @@ body#linkaid {
   width: 100%;
 }
 .actions-text {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
+  font-family: "Spinnaker";
 }
 .actions-text h2 {
   margin: 0 0 15px;
@@ -212,7 +213,7 @@ body#linkaid {
     margin-top: 40px;
     width: auto;
     align-items: center;
-    font-family: "Spinnaker";
+    
   }
   .actions-text h2 {
     padding-left: 0;
